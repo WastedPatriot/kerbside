@@ -60,6 +60,16 @@ def test_scan_without_input(capsys):
     assert "dry-run" in capsys.readouterr().err
 
 
+def test_roast_is_a_joke_about_potatoes(capsys):
+    code = main(["roast"])
+    assert code == 0
+    out = capsys.readouterr().out.lower()
+    assert "potato" in out
+    assert "ticket" in out
+    for banned in ("impacket", "rubeus", "hashcat", "secretsdump", "mimikatz", "getuserspns"):
+        assert banned not in out
+
+
 def test_empty_directory(tmp_path, capsys):
     code = main(["scan", "-i", str(tmp_path), "-o", str(tmp_path / "out")])
     assert code == 1

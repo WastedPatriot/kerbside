@@ -44,6 +44,8 @@ def main(argv: list[str] | None = None) -> int:
         return 0
     if args.command == "scan":
         return _scan(args)
+    if args.command == "roast":
+        return _roast()
     parser.print_help()
     return 2
 
@@ -103,7 +105,35 @@ def _parser() -> argparse.ArgumentParser:
         metavar="NAME",
         help="Only paths involving a principal whose name contains this text",
     )
+
+    commands.add_parser(
+        "roast",
+        help="A joke. Does not roast Kerberos",
+    )
     return parser
+
+
+_ROAST = """\
+You asked for a roast.
+
+Fine.
+
+The legacy app that "cannot do Kerberos pre-authentication" is having a laugh.
+An SPN is not a personality. Group managed service accounts have existed for a while.
+Unconstrained delegation on a web server is the directory equivalent of leaving
+the side gate open, with a note that says the key is under the mat.
+"Domain Users can reset this password" is not a collaborative culture.
+
+None of that requested a ticket. None of that hashed a password.
+The only approved roast is a potato, a bit of oil, and a hot oven.
+
+If you are on a real engagement, put the kettle on and read the report.
+"""
+
+
+def _roast() -> int:
+    console.print(_ROAST.rstrip())
+    return 0
 
 
 def _scan(args: argparse.Namespace) -> int:

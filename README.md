@@ -234,3 +234,9 @@ Edges: `source,relation,target,inherited`
 
 `member_of`, `spns`, and `delegate_to` are pipe-separated when a cell holds more than one. `type` is `user`, `group`, `computer`, or `domain`. Booleans are `true` or `false`. There is a tiny example under `src/kerbside/data/fixtures/lampeter`.
 </details>
+
+<details>
+<summary>kerbside roast</summary>
+
+`kerbside roast` is a joke. It has a short go at the habits that show up in every lab, and then it recommends a potato. It does not connect to anything. If you came here for hashes, the potato is the disappointment.
+</details>
