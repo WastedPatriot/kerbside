@@ -103,7 +103,7 @@
         "highvalue": false,
         "samaccountname": "sql.svc",
         "distinguishedname": "CN=SQL.SVC,NORTHSEA.LOCAL",
-        "description": "Rates database service account. The password lived on a sticky note, which is not a password manager.",
+        "description": "Rates database service account. The password lived on a sticky note, NorthseaSticky#8841, which is not a password manager.",
         "enabled": true,
         "pwdlastset": 133000000000000000,
         "lastlogon": 133000000000000000,

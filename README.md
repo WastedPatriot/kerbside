@@ -151,7 +151,7 @@ Flags it will bother you about:
 - Unconstrained delegation. On a domain controller this is noted as expected. On a member server it is not
 - Constrained delegation, and protocol transition when `TrustedToAuthForDelegation` is set
 - `PASSWD_NOTREQD`
-- Descriptions that mention a password or a secret
+- Descriptions that appear to hold a secret. The report names the account and the length. It does not copy the text.
 - `adminCount` left on an account that is no longer high value
 
 ## How it works

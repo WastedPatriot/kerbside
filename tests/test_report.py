@@ -1,3 +1,5 @@
+import json
+from dataclasses import asdict
 from datetime import UTC, datetime
 from pathlib import Path
 
@@ -55,8 +57,54 @@ def test_html_escapes_names():
     page = render_html(analyse(directory), source_label="<img src=x>", generated=moment)
     assert "<img" not in page
     assert "<script>" not in page
+    assert "alert(1)" not in page
     assert "&lt;img" in page
-    assert "&lt;script&gt;" in page
+    assert "&lt;script&gt;" not in page
+
+
+# Planted in the Northsea fixture description. It must stay in the export
+# and stay out of every report.
+_PLANTED_SECRET = "NorthseaSticky#8841"
+
+
+def test_planted_description_secret_never_reaches_output(tmp_path: Path):
+    directory = load(northsea_dir())
+    sql = next(
+        principal
+        for principal in directory.principals.values()
+        if principal.sam_account_name == "sql.svc"
+    )
+    assert _PLANTED_SECRET in sql.description
+
+    moment = datetime(2026, 11, 11, 12, 40, tzinfo=UTC)
+    analysis = analyse(directory)
+    finding = next(item for item in analysis.findings if item.category == "description")
+    assert str(len(sql.description)) in finding.detail
+    assert "not copied" in finding.detail
+
+    markdown = render_markdown(analysis, source_label="northsea", generated=moment)
+    page = render_html(analysis, source_label="northsea", generated=moment)
+    payload = json.dumps([asdict(item) for item in analysis.findings])
+    json_path = tmp_path / "findings.json"
+    json_path.write_text(payload, encoding="utf-8")
+    markdown_path, html_path = write_reports(
+        analysis,
+        tmp_path,
+        source_label="northsea",
+        generated=moment,
+    )
+
+    rendered = "\n".join(
+        [
+            markdown,
+            page,
+            payload,
+            json_path.read_text(encoding="utf-8"),
+            markdown_path.read_text(encoding="utf-8"),
+            html_path.read_text(encoding="utf-8"),
+        ]
+    )
+    assert _PLANTED_SECRET not in rendered
 
 
 def test_write_reports_creates_both_files(tmp_path: Path):

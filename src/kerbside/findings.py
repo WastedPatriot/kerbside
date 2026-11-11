@@ -253,17 +253,23 @@ def _admin_count(principal: Principal) -> list[Finding]:
 
 
 def _description(principal: Principal) -> list[Finding]:
+    """Flag a secret-shaped description without copying it into the report.
+
+    The text stays in the operator's export. A length is enough to find the
+    attribute again. Quoting it would paste the secret into md, html, and
+    anything that serialises the finding.
+    """
     text = (principal.description or "").strip()
     if not text or not _SECRET_WORDS.search(text):
         return []
-    excerpt = text if len(text) <= 240 else text[:237] + "..."
     return [
         _make(
             principal,
             "low",
             "description",
-            "Description mentions a secret",
-            f"The description field is carrying something it should not: {excerpt}",
+            "Description appears to contain a secret",
+            "The description appears to contain a secret "
+            f"({len(text)} characters). The text is not copied into this report.",
             "Move the secret out of the directory. Then change it. "
             "Directories and their backups both have long memories.",
         )
