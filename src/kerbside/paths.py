@@ -288,6 +288,9 @@ def _path_severity(target: Principal) -> str:
     markers.add(bare_name(target.name))
     if target.sam_account_name:
         markers.add(bare_name(target.sam_account_name))
+    hint = rid_hint(target.object_id)
+    if hint:
+        markers.add(bare_name(hint))
     if markers & _CRITICAL_GROUPS or "DOMAIN OBJECT" in markers or "DOMAIN CONTROLLER" in markers:
         return "critical"
     if markers & _HIGH_GROUPS or target.high_value:
@@ -310,8 +313,14 @@ def _root_reasons(principal: Principal) -> list[str]:
 def _group_reason(principal: Principal) -> str | None:
     if principal.kind != "group":
         return None
+    # The RID hint is not the group's own name. A renamed Domain Admins
+    # group should be explained by the well-known title, not only the local one.
+    own = {bare_name(principal.name)}
+    if principal.sam_account_name:
+        own.add(bare_name(principal.sam_account_name))
+    own.discard("")
     hint = rid_hint(principal.object_id)
-    if _names(principal) & _HV_GROUPS:
+    if own & _HV_GROUPS:
         return principal.display
     if hint and bare_name(hint) in _HV_GROUPS:
         return hint
