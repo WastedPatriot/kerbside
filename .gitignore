@@ -12,3 +12,41 @@ venv/
 htmlcov/
 kerbside-out/
 .DS_Store
+
+# Local secrets. The fictional fixtures are not in this list.
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+credentials.json
+*.kdbx
+secrets.*
+
+# SharpHound / BloodHound collections. Easy to drop next to the repo and
+# easier still to commit by accident. The bundled fixtures are the exception.
+*BloodHound*.zip
+*bloodhound*.zip
+users.json
+groups.json
+computers.json
+domains.json
+gpos.json
+ous.json
+containers.json
+*_users.json
+*_groups.json
+*_computers.json
+*_domains.json
+*_gpos.json
+*_ous.json
+*_containers.json
+
+!src/kerbside/data/fixtures/**/users.json
+!src/kerbside/data/fixtures/**/groups.json
+!src/kerbside/data/fixtures/**/computers.json
+!src/kerbside/data/fixtures/**/domains.json
+!src/kerbside/data/fixtures/**/gpos.json
+!src/kerbside/data/fixtures/**/ous.json
+!src/kerbside/data/fixtures/**/containers.json
