@@ -23,7 +23,7 @@ classifiers = [
 dependencies = ["rich>=13.7"]
 
 [project.optional-dependencies]
-dev = ["pytest>=8.0", "ruff>=0.6"]
+dev = ["pytest>=9.2.0", "ruff>=0.6"]
 
 [project.urls]
 Repository = "https://github.com/WastedPatriot/kerbside"
