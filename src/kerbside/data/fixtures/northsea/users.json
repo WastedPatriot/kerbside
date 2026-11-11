@@ -1,0 +1,389 @@
+{
+  "data": [
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1101",
+      "PrimaryGroupSID": "S-1-5-21-4000000001-4000000002-4000000003-513",
+      "Properties": {
+        "name": "ALICE.PENCE@NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": false,
+        "samaccountname": "alice.pence",
+        "distinguishedname": "CN=ALICE.PENCE,NORTHSEA.LOCAL",
+        "description": "Accounts payable.",
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": false,
+        "hasspn": false,
+        "serviceprincipalnames": [],
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [
+        {
+          "PrincipalSID": "S-1-5-21-4000000001-4000000002-4000000003-513",
+          "PrincipalType": "Group",
+          "RightName": "GenericRead",
+          "AceType": "AccessAllowed",
+          "IsInherited": true
+        },
+        {
+          "PrincipalSID": "S-1-5-21-4000000001-4000000002-4000000003-1102",
+          "PrincipalType": "User",
+          "RightName": "GenericAll",
+          "AceType": "AccessDenied",
+          "IsInherited": false
+        }
+      ],
+      "IsDeleted": false
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1102",
+      "PrimaryGroupSID": "S-1-5-21-4000000001-4000000002-4000000003-513",
+      "Properties": {
+        "name": "BOB.HADDOCK@NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": false,
+        "samaccountname": "bob.haddock",
+        "distinguishedname": "CN=BOB.HADDOCK,NORTHSEA.LOCAL",
+        "description": "Helpdesk. Patient. Mostly.",
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": false,
+        "hasspn": false,
+        "serviceprincipalnames": [],
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [],
+      "IsDeleted": false
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1103",
+      "PrimaryGroupSID": "S-1-5-21-4000000001-4000000002-4000000003-513",
+      "Properties": {
+        "name": "CAROL.WICKS@NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": false,
+        "samaccountname": "carol.wicks",
+        "distinguishedname": "CN=CAROL.WICKS,NORTHSEA.LOCAL",
+        "description": "Marketing. The legacy app still cannot do pre-authentication. We know.",
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": true,
+        "hasspn": false,
+        "serviceprincipalnames": [],
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [],
+      "IsDeleted": false
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1104",
+      "PrimaryGroupSID": "S-1-5-21-4000000001-4000000002-4000000003-513",
+      "Properties": {
+        "name": "SQL.SVC@NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": false,
+        "samaccountname": "sql.svc",
+        "distinguishedname": "CN=SQL.SVC,NORTHSEA.LOCAL",
+        "description": "Rates database service account. The password lived on a sticky note, which is not a password manager.",
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": true,
+        "dontreqpreauth": false,
+        "hasspn": true,
+        "serviceprincipalnames": [
+          "MSSQLSvc/db01.northsea.local:1433"
+        ],
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [],
+      "IsDeleted": false
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1105",
+      "PrimaryGroupSID": "S-1-5-21-4000000001-4000000002-4000000003-513",
+      "Properties": {
+        "name": "SVC.FILES@NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": false,
+        "samaccountname": "svc.files",
+        "distinguishedname": "CN=SVC.FILES,NORTHSEA.LOCAL",
+        "description": null,
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": false,
+        "hasspn": false,
+        "serviceprincipalnames": [],
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [
+        {
+          "PrincipalSID": "S-1-5-21-4000000001-4000000002-4000000003-2101",
+          "PrincipalType": "Group",
+          "RightName": "GenericAll",
+          "AceType": "AccessAllowed",
+          "IsInherited": false
+        }
+      ],
+      "IsDeleted": false
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1106",
+      "PrimaryGroupSID": "S-1-5-21-4000000001-4000000002-4000000003-513",
+      "Properties": {
+        "name": "DIANA.CROFT@NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": true,
+        "samaccountname": "diana.croft",
+        "distinguishedname": "CN=DIANA.CROFT,NORTHSEA.LOCAL",
+        "description": "Runs the place.",
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": false,
+        "hasspn": false,
+        "serviceprincipalnames": [],
+        "admincount": true,
+        "unconstraineddelegation": false,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [],
+      "IsDeleted": false
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1107",
+      "PrimaryGroupSID": "S-1-5-21-4000000001-4000000002-4000000003-513",
+      "Properties": {
+        "name": "NORA.QUAY@NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": false,
+        "samaccountname": "nora.quay",
+        "distinguishedname": "CN=NORA.QUAY,NORTHSEA.LOCAL",
+        "description": "Projects.",
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": false,
+        "hasspn": false,
+        "serviceprincipalnames": [],
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [],
+      "IsDeleted": false
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1108",
+      "PrimaryGroupSID": "S-1-5-21-4000000001-4000000002-4000000003-513",
+      "Properties": {
+        "name": "SVC.BACKUP@NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": false,
+        "samaccountname": "svc.backup",
+        "distinguishedname": "CN=SVC.BACKUP,NORTHSEA.LOCAL",
+        "description": null,
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": false,
+        "hasspn": false,
+        "serviceprincipalnames": [],
+        "admincount": true,
+        "unconstraineddelegation": false,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [
+        {
+          "PrincipalSID": "S-1-5-21-4000000001-4000000002-4000000003-1107",
+          "PrincipalType": "User",
+          "RightName": "ForceChangePassword",
+          "AceType": "AccessAllowed",
+          "IsInherited": false
+        }
+      ],
+      "IsDeleted": false
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1109",
+      "PrimaryGroupSID": "S-1-5-21-4000000001-4000000002-4000000003-513",
+      "Properties": {
+        "name": "SYNC.SVC@NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": false,
+        "samaccountname": "sync.svc",
+        "distinguishedname": "CN=SYNC.SVC,NORTHSEA.LOCAL",
+        "description": "Identity sync. Allegedly.",
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": false,
+        "hasspn": false,
+        "serviceprincipalnames": [],
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [],
+      "IsDeleted": false
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1110",
+      "PrimaryGroupSID": "S-1-5-21-4000000001-4000000002-4000000003-513",
+      "Properties": {
+        "name": "PRINT.SVC@NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": false,
+        "samaccountname": "print.svc",
+        "distinguishedname": "CN=PRINT.SVC,NORTHSEA.LOCAL",
+        "description": null,
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": false,
+        "hasspn": false,
+        "serviceprincipalnames": [],
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "trustedtoauth": true,
+        "sidhistory": []
+      },
+      "Aces": [],
+      "IsDeleted": false,
+      "AllowedToDelegate": [
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1002",
+          "ObjectType": "Computer"
+        }
+      ]
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1111",
+      "PrimaryGroupSID": "S-1-5-21-4000000001-4000000002-4000000003-513",
+      "Properties": {
+        "name": "ED.MARSH@NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": false,
+        "samaccountname": "ed.marsh",
+        "distinguishedname": "CN=ED.MARSH,NORTHSEA.LOCAL",
+        "description": "Helpdesk, Tuesday to Thursday.",
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": false,
+        "hasspn": false,
+        "serviceprincipalnames": [],
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [],
+      "IsDeleted": false
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1112",
+      "PrimaryGroupSID": "S-1-5-21-4000000001-4000000002-4000000003-513",
+      "Properties": {
+        "name": "OLD.CONTRACTOR@NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": false,
+        "samaccountname": "old.contractor",
+        "distinguishedname": "CN=OLD.CONTRACTOR,NORTHSEA.LOCAL",
+        "description": "Left in March. The account did not.",
+        "enabled": false,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": true,
+        "hasspn": false,
+        "serviceprincipalnames": [],
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [],
+      "IsDeleted": false
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-502",
+      "PrimaryGroupSID": "S-1-5-21-4000000001-4000000002-4000000003-513",
+      "Properties": {
+        "name": "KRBTGT@NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": false,
+        "samaccountname": "krbtgt",
+        "distinguishedname": "CN=KRBTGT,NORTHSEA.LOCAL",
+        "description": null,
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": false,
+        "hasspn": true,
+        "serviceprincipalnames": [
+          "kadmin/changepw"
+        ],
+        "admincount": true,
+        "unconstraineddelegation": false,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [],
+      "IsDeleted": false
+    }
+  ],
+  "meta": {
+    "methods": 0,
+    "type": "users",
+    "count": 13,
+    "version": 5
+  }
+}

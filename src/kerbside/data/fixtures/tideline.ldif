@@ -1,0 +1,72 @@
+# Fictional ldapsearch excerpt. Tideline Council does not exist.
+dn: DC=tideline,DC=local
+objectClass: top
+objectClass: domain
+objectClass: domainDNS
+dc: tideline
+
+dn: CN=Helpdesk,CN=Users,DC=tideline,DC=local
+objectClass: top
+objectClass: group
+cn: Helpdesk
+sAMAccountName: Helpdesk
+member: CN=Carol Wicks,CN=Users,DC=tideline,DC=local
+
+dn: CN=Carol Wicks,CN=Users,DC=tideline,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Carol Wicks
+sAMAccountName: carol.wicks
+userAccountControl: 4194816
+memberOf: CN=Helpdesk,CN=Users,DC=tideline,DC=local
+description: Marketing still uses the app that
+  cannot do pre-authentication.
+
+dn: CN=SQL Service,CN=Users,DC=tideline,DC=local
+objectClass: top
+objectClass: user
+cn: SQL Service
+sAMAccountName: sql.svc
+userAccountControl: 66048
+servicePrincipalName: HTTP/intranet.tideline.local
+servicePrincipalName: HTTP/intranet
+
+dn: CN=Temp Admin,CN=Users,DC=tideline,DC=local
+objectClass: top
+objectClass: user
+cn: Temp Admin
+sAMAccountName: temp.admin
+userAccountControl: 544
+description:: a2VwdCBpbiBhIGRyYXdlcg==
+
+dn: CN=Old Contractor,CN=Users,DC=tideline,DC=local
+objectClass: top
+objectClass: user
+cn: Old Contractor
+sAMAccountName: old.contractor
+userAccountControl: 4194818
+
+dn: CN=FS01,CN=Computers,DC=tideline,DC=local
+objectClass: top
+objectClass: computer
+cn: FS01
+sAMAccountName: FS01$
+userAccountControl: 4096
+
+dn: CN=WEB01,CN=Computers,DC=tideline,DC=local
+objectClass: top
+objectClass: person
+objectClass: computer
+cn: WEB01
+sAMAccountName: WEB01$
+userAccountControl: 528384
+msDS-AllowedToDelegateTo: cifs/fs01.tideline.local
+
+dn: CN=DC01,CN=Computers,DC=tideline,DC=local
+objectClass: top
+objectClass: computer
+cn: DC01
+sAMAccountName: DC01$
+userAccountControl: 532480

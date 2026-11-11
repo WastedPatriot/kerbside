@@ -1,0 +1,139 @@
+{
+  "data": [
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1001",
+      "PrimaryGroupSID": "S-1-5-21-4000000001-4000000002-4000000003-516",
+      "Properties": {
+        "name": "DC01.NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": false,
+        "samaccountname": "DC01$",
+        "distinguishedname": "CN=DC01$,NORTHSEA.LOCAL",
+        "description": null,
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": false,
+        "hasspn": false,
+        "serviceprincipalnames": [],
+        "admincount": false,
+        "unconstraineddelegation": true,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [],
+      "IsDeleted": false
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1002",
+      "PrimaryGroupSID": "S-1-5-21-4000000001-4000000002-4000000003-515",
+      "Properties": {
+        "name": "FS01.NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": false,
+        "samaccountname": "FS01$",
+        "distinguishedname": "CN=FS01$,NORTHSEA.LOCAL",
+        "description": null,
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": false,
+        "hasspn": false,
+        "serviceprincipalnames": [],
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [],
+      "IsDeleted": false,
+      "LocalAdmins": {
+        "Collected": true,
+        "FailureReason": null,
+        "Results": [
+          {
+            "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1105",
+            "ObjectType": "User"
+          }
+        ]
+      },
+      "Sessions": {
+        "Collected": true,
+        "FailureReason": null,
+        "Results": [
+          {
+            "UserSID": "S-1-5-21-4000000001-4000000002-4000000003-1106",
+            "ComputerSID": "S-1-5-21-4000000001-4000000002-4000000003-1002"
+          }
+        ]
+      }
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1003",
+      "PrimaryGroupSID": "S-1-5-21-4000000001-4000000002-4000000003-515",
+      "Properties": {
+        "name": "WEB01.NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": false,
+        "samaccountname": "WEB01$",
+        "distinguishedname": "CN=WEB01$,NORTHSEA.LOCAL",
+        "description": "Public website. Unconstrained delegation, because someone was in a hurry.",
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": false,
+        "hasspn": false,
+        "serviceprincipalnames": [],
+        "admincount": false,
+        "unconstraineddelegation": true,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [],
+      "IsDeleted": false
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1004",
+      "PrimaryGroupSID": "S-1-5-21-4000000001-4000000002-4000000003-515",
+      "Properties": {
+        "name": "DB01.NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": false,
+        "samaccountname": "DB01$",
+        "distinguishedname": "CN=DB01$,NORTHSEA.LOCAL",
+        "description": null,
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": false,
+        "hasspn": false,
+        "serviceprincipalnames": [],
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [],
+      "IsDeleted": false,
+      "Sessions": {
+        "Collected": false,
+        "FailureReason": "Not collected in this sample.",
+        "Results": []
+      }
+    }
+  ],
+  "meta": {
+    "methods": 0,
+    "type": "computers",
+    "count": 4,
+    "version": 5
+  }
+}

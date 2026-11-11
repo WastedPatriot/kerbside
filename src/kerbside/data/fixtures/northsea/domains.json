@@ -1,0 +1,51 @@
+{
+  "data": [
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003",
+      "PrimaryGroupSID": "",
+      "Properties": {
+        "name": "NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": true,
+        "samaccountname": "NORTHSEA",
+        "distinguishedname": "CN=NORTHSEA,NORTHSEA.LOCAL",
+        "description": null,
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": false,
+        "hasspn": false,
+        "serviceprincipalnames": [],
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [
+        {
+          "PrincipalSID": "S-1-5-21-4000000001-4000000002-4000000003-1109",
+          "PrincipalType": "User",
+          "RightName": "GetChanges",
+          "AceType": "AccessAllowed",
+          "IsInherited": false
+        },
+        {
+          "PrincipalSID": "S-1-5-21-4000000001-4000000002-4000000003-1109",
+          "PrincipalType": "User",
+          "RightName": "GetChangesAll",
+          "AceType": "AccessAllowed",
+          "IsInherited": false
+        }
+      ],
+      "IsDeleted": false
+    }
+  ],
+  "meta": {
+    "methods": 0,
+    "type": "domains",
+    "count": 1,
+    "version": 5
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "data": [
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-512",
+      "PrimaryGroupSID": "S-1-5-21-4000000001-4000000002-4000000003-512",
+      "Properties": {
+        "name": "DOMAIN ADMINS@NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": true,
+        "samaccountname": "Domain Admins",
+        "distinguishedname": "CN=DOMAIN ADMINS,NORTHSEA.LOCAL",
+        "description": null,
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": false,
+        "hasspn": false,
+        "serviceprincipalnames": [],
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [
+        {
+          "PrincipalSID": "S-1-5-21-4000000001-4000000002-4000000003-512",
+          "PrincipalType": "Group",
+          "RightName": "GenericAll",
+          "AceType": "AccessAllowed",
+          "IsInherited": false
+        }
+      ],
+      "IsDeleted": false,
+      "Members": [
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1106",
+          "ObjectType": "User"
+        }
+      ]
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-513",
+      "PrimaryGroupSID": "S-1-5-21-4000000001-4000000002-4000000003-513",
+      "Properties": {
+        "name": "DOMAIN USERS@NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": false,
+        "samaccountname": "Domain Users",
+        "distinguishedname": "CN=DOMAIN USERS,NORTHSEA.LOCAL",
+        "description": null,
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": false,
+        "hasspn": false,
+        "serviceprincipalnames": [],
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [],
+      "IsDeleted": false,
+      "Members": [
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1101",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1102",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1103",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1104",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1105",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1106",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1107",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1108",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1109",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1110",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1111",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1112",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-502",
+          "ObjectType": "User"
+        }
+      ]
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-515",
+      "PrimaryGroupSID": "S-1-5-21-4000000001-4000000002-4000000003-515",
+      "Properties": {
+        "name": "DOMAIN COMPUTERS@NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": false,
+        "samaccountname": "Domain Computers",
+        "distinguishedname": "CN=DOMAIN COMPUTERS,NORTHSEA.LOCAL",
+        "description": null,
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": false,
+        "hasspn": false,
+        "serviceprincipalnames": [],
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [],
+      "IsDeleted": false,
+      "Members": [
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1002",
+          "ObjectType": "Computer"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1003",
+          "ObjectType": "Computer"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1004",
+          "ObjectType": "Computer"
+        }
+      ]
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-516",
+      "PrimaryGroupSID": "S-1-5-21-4000000001-4000000002-4000000003-516",
+      "Properties": {
+        "name": "DOMAIN CONTROLLERS@NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": false,
+        "samaccountname": "Domain Controllers",
+        "distinguishedname": "CN=DOMAIN CONTROLLERS,NORTHSEA.LOCAL",
+        "description": null,
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": false,
+        "hasspn": false,
+        "serviceprincipalnames": [],
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [],
+      "IsDeleted": false,
+      "Members": [
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1001",
+          "ObjectType": "Computer"
+        }
+      ]
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-2101",
+      "PrimaryGroupSID": "S-1-5-21-4000000001-4000000002-4000000003-2101",
+      "Properties": {
+        "name": "HELPDESK@NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": false,
+        "samaccountname": "Helpdesk",
+        "distinguishedname": "CN=HELPDESK,NORTHSEA.LOCAL",
+        "description": null,
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": false,
+        "hasspn": false,
+        "serviceprincipalnames": [],
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [],
+      "IsDeleted": false,
+      "Members": [
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1102",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1111",
+          "ObjectType": "User"
+        }
+      ]
+    },
+    {
+      "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-2102",
+      "PrimaryGroupSID": "S-1-5-21-4000000001-4000000002-4000000003-2102",
+      "Properties": {
+        "name": "MARKETING@NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": false,
+        "samaccountname": "Marketing",
+        "distinguishedname": "CN=MARKETING,NORTHSEA.LOCAL",
+        "description": null,
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": false,
+        "hasspn": false,
+        "serviceprincipalnames": [],
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [],
+      "IsDeleted": false,
+      "Members": [
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1101",
+          "ObjectType": "User"
+        },
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1103",
+          "ObjectType": "User"
+        }
+      ]
+    },
+    {
+      "ObjectIdentifier": "S-1-5-32-551",
+      "PrimaryGroupSID": "S-1-5-32-551",
+      "Properties": {
+        "name": "BACKUP OPERATORS@NORTHSEA.LOCAL",
+        "domain": "NORTHSEA.LOCAL",
+        "domainsid": "S-1-5-21-4000000001-4000000002-4000000003",
+        "highvalue": true,
+        "samaccountname": "Backup Operators",
+        "distinguishedname": "CN=BACKUP OPERATORS,NORTHSEA.LOCAL",
+        "description": null,
+        "enabled": true,
+        "pwdlastset": 133000000000000000,
+        "lastlogon": 133000000000000000,
+        "pwdneverexpires": false,
+        "dontreqpreauth": false,
+        "hasspn": false,
+        "serviceprincipalnames": [],
+        "admincount": false,
+        "unconstraineddelegation": false,
+        "trustedtoauth": false,
+        "sidhistory": []
+      },
+      "Aces": [],
+      "IsDeleted": false,
+      "Members": [
+        {
+          "ObjectIdentifier": "S-1-5-21-4000000001-4000000002-4000000003-1108",
+          "ObjectType": "User"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "methods": 0,
+    "type": "groups",
+    "count": 7,
+    "version": 5
+  }
+}

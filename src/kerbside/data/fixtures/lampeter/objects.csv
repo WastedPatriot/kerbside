@@ -1,0 +1,4 @@
+object_id,type,name,sam,domain,enabled,high_value,is_dc,member_of,spns,dont_req_preauth,unconstrained,trusted_to_auth,delegate_to,password_not_required,description
+G-DA,group,Domain Admins@lampeter.local,Domain Admins,lampeter.local,true,true,false,,,,,,,,
+U-MIRA,user,mira@lampeter.local,mira,lampeter.local,true,false,false,,,,,,,false,Parish clerk
+U-SQL,user,sql@lampeter.local,sql,lampeter.local,true,false,false,,HTTP/app.lampeter.local|CIFS/files.lampeter.local,false,false,false,,false,Rates database
